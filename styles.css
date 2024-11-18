@@ -1,9 +1,13 @@
-/* Жалпы стильдер */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
 header {
@@ -46,8 +50,17 @@ header nav ul li a {
 }
 
 /* Қызметтер мен портфолио */
+
+.services-overview {
+    background-image: url("https://media.istockphoto.com/id/1364223865/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D0%BC-%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D0%BC-%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B8%D0%B9-%D0%BE-%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%D0%B0%D1%85-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%B0-%D0%B2-%D1%81%D0%B2%D0%BE%D0%B5%D0%BC-%D0%BE%D1%84%D0%B8%D1%81%D0%B5-%D0%B4%D0%BB%D1%8F.jpg?s=612x612&w=0&k=20&c=FOrhJTaZXe3VXHzRhuf7yOu5sgBL9eiqXzsnJeNsbJw=");
+    background-size: cover;
+    height: 440px;
+    box-shadow: inset 0px 0px 130px 30px rgb(0, 0, 0);
+    padding-top: 20px;
+    background-position: center;
+}
+
 .services-overview, .portfolio, .about-us {
-    padding: 40px 20px;
     text-align: center;
 }
 
@@ -81,5 +94,5 @@ footer {
     background-color: #003366;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
