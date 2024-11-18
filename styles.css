@@ -1,0 +1,85 @@
+/* Жалпы стильдер */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Басты бет бөлім */
+.hero {
+    background-color: #0077b6;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Қызметтер мен портфолио */
+.services-overview, .portfolio, .about-us {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-overview ul, .portfolio-item {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services-overview ul li, .portfolio-item {
+    margin-bottom: 20px;
+}
+
+/* Байланыс формасы */
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
