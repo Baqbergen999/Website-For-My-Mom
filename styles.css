@@ -1,105 +1,419 @@
+/* Әдепкі стильдер */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Жалпы дене стилі */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-weight: bold;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
 }
 
+/* Контейнер стилі */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header стилі */
 header {
-    background-color: #003366;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
+header h1 {
+  text-align: center;
+  font-size: 36px;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 20px;
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px 0;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li {
+  margin: 0 15px;
 }
 
-/* Басты бет бөлім */
-.hero {
-    background-color: #0077b6;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-.hero p{
-    padding-bottom: 20px;
-}
-.cta-btn {
-    background-color: #ff6f61;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 1s;
-}
-.cta-btn:hover{
-    background-color: #ff4f61;
-    padding: 13px 32px;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-/* Қызметтер мен портфолио */
-
-.services-overview {
-    background-image: url("https://media.istockphoto.com/id/1364223865/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D0%BC-%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D0%BC-%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B8%D0%B9-%D0%BE-%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%D0%B0%D1%85-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%B0-%D0%B2-%D1%81%D0%B2%D0%BE%D0%B5%D0%BC-%D0%BE%D1%84%D0%B8%D1%81%D0%B5-%D0%B4%D0%BB%D1%8F.jpg?s=612x612&w=0&k=20&c=FOrhJTaZXe3VXHzRhuf7yOu5sgBL9eiqXzsnJeNsbJw=");
-    background-size: cover;
-    height: 440px;
-    box-shadow: inset 0px 0px 130px 30px rgb(0, 0, 0);
-    padding-top: 20px;
-    background-position: center;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-.services-overview, .portfolio, .about-us {
-    text-align: center;
+/* Негізгі бөлім */
+#main {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
 }
 
-.services-overview ul, .portfolio-item {
-    list-style-type: none;
-    padding: 0;
+#main h2 {
+  font-size: 36px;
+  color: #333;
 }
 
-.services-overview ul li, .portfolio-item {
-    margin-bottom: 20px;
+#main p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-/* Байланыс формасы */
-.contact form input, .contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+.cta-button {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
-.contact form button {
-    background-color: #0077b6;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.cta-button:hover {
+  background-color: #2f762f;
 }
 
+/* About бөлім стилі */
+#about {
+  background-color: #e9ecef;
+  padding: 60px 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+
+#about p {
+  font-size: 20px;
+  text-align: center;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.age {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  border-radius: 8px;
+}
+
+/* Services бөлім стилі */
+#services {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+#services h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-item {
+  width: 30%;
+  background-color: #f4f4f4;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Team бөлім стилі */
+#team {
+  background-color: #e9ecef;
+  padding: 60px 0;
+}
+
+#team h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Testimonials бөлім стилі */
+#testimonials {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+#testimonials h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contact бөлім стилі */
+#contact {
+  background-color: #e9ecef;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 20px;
+  color: #555;
+}
+
+#contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer стилі */
 footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 30px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Media Query - мобильді құрылғылар үшін */
+@media (max-width: 768px) {
+  .services-list {
+    flex-direction: column;
+  }
+
+  .service-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .team-members {
+    flex-direction: column;
+  }
+
+  .team-member {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Әдепкі стильдер */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Жалпы дене стилі */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Контейнер стилі */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header стилі */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* About бөлім стилі */
+#about {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#about p {
+  font-size: 20px;
+  text-align: center;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.about-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about-detail {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-detail h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-detail ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+.about-detail p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.about-image {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 8px;
+}
+
+/* Footer стилі */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Media Query - мобильді құрылғылар үшін */
+@media (max-width: 768px) {
+  .about-details {
+    flex-direction: column;
+  }
+
+  .about-detail {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
