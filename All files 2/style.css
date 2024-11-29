@@ -1,0 +1,257 @@
+/* Негізгі стильдер */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4; /* Сұр түс */
+}
+
+h1, h2, h3 {
+    color: #292929; /* Көк түс */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #555555; /* Көк түс */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    background: #afafaf; /* Көк түс */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero p {
+    color: #5a5a5a;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #3f3f3f; /* Қызғылт-сары түс */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.hero .btn:hover {
+    background: #6d6d6d; /* Қою қызғылт-сары түс */
+    color: gainsboro;
+}
+
+/* Services */
+#services {
+    background: #ffffff; /* Ақ түс */
+    padding: 40px 20px;
+}
+
+#services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#services .service-item {
+    background: #f4f4f4; /* Ашық сұр */
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#services .service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#services .service-item h3 {
+    margin: 15px 0 10px;
+}
+
+#services .service-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Benefits */
+#benefits {
+    background: #ffffff; /* Ақ түс */
+    padding: 40px 20px;
+}
+
+#benefits .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#benefits .benefit-item {
+    background-image: url("https://kartinki.pics/uploads/posts/2021-07/1626753743_8-kartinkin-com-p-bukhgalter-fon-krasivo-11.jpg");
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#benefits .benefit-item h3 {
+    font-size: 1.5em;
+    color: white;
+    background-color: #0000009f;
+    padding: 0px;
+    box-shadow: #000000bc 0px 0px 20px 10px;
+}
+
+#benefits .benefit-item p {
+    font-size: 1em;
+    margin: 10px 0 0;
+    color: white;
+    background-color: #0000009f;
+    padding: 0px;
+    box-shadow: #000000bc 0px 0px 20px 10px;
+}
+
+/* Testimonials */
+#testimonials {
+    background: #989898;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+#testimonials h2 {
+    color: rgb(63, 63, 63);
+}
+
+#testimonials .testimonial {
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+#testimonials h4 {
+    margin-top: 10px;
+    font-weight: 100%;
+    color: #3d3d3d;
+}
+
+/* Байланыс формасы */
+#contact {
+    background: #ffffff; /* Ақ түс */
+    padding: 40px 20px;
+    color: #333;
+}
+
+#contact form {
+    background: #f4f4f4; /* Ашық сұр */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #303030; /* Көк түс */
+}
+
+#contact form input, 
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background: #ff5733; /* Қызғылт-сары түс */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background: #c13b26;
+}
+
+/* Footer */
+footer {
+    background: #333; /* Қара түс */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ff5733; /* Қызғылт-сары түс */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer ul li a:hover {
+    color: #c13b26;
+}
